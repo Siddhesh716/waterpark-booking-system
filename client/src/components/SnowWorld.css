@@ -1,0 +1,168 @@
+.SnowWorld-park-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+    background: linear-gradient(to bottom, #dbefff, #ffffff);
+    padding: 2rem;
+}
+
+.snowworld-content {
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.snowworld-content h1 {
+    font-size: 2.5rem;
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.snowworld-content p {
+    font-size: 1.1rem;
+    color: black;
+    margin-bottom: 1.7rem;
+}
+
+.snow-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.video-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.snow-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.snowworld-info {
+    margin-top: 2rem;
+    text-align: left;
+    color: black;
+}
+
+.snowworld-info h3 {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    color: red;
+}
+
+.snowworld-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.snowworld-info ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    color: black;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.snowworld-info ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #60a5fa;
+    font-weight: bold;
+}
+
+.note {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #555;
+}
+
+.book-now-btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 2rem;
+    background-color: #1e3a8a;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.book-now-btn:hover {
+    background-color: #3b82f6;
+    transform: scale(1.05);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.booking-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    width: 700px;
+    text-align: center;
+}
+
+.booking-form h2 {
+    margin-bottom: 1.5rem;
+    color: red;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.booking-form input::placeholder {
+    color: white;
+}
+
+.booking-form button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.booking-form button:hover {
+    background-color: blue;
+}
+
+.confirmation {
+    margin-top: 1rem;
+    color: green;
+    font-weight: bold;
+}

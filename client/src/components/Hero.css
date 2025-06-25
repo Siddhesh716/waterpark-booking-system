@@ -1,0 +1,28 @@
+.hero {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #fff;
+}

@@ -1,0 +1,215 @@
+.theme-park-container {
+    padding: 100px 20px 60px 20px;
+    background: #f0faff;
+    min-height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.theme-park-container h1 {
+    font-size: 3rem;
+    color: red;
+    margin-bottom: 30px;
+    animation: dropIn 0.6s ease;
+}
+
+@keyframes dropIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ride-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.ride-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 8px solid gray;
+}
+
+.ride-card.open {
+    border-left: 8px solid green;
+}
+
+.ride-card.closed {
+    border-left: 8px solid red;
+    opacity: 0.7;
+}
+
+.ride-card h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.ride-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.ride-status {
+    margin-top: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.theme-info-section {
+    margin-top: 60px;
+    padding: 20px 20px;
+    background-color: #f0faff;
+    color: red;
+    text-align: center;
+}
+
+.theme-info-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.theme-info-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: orange;
+    margin: 10px auto 0;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 0 auto 50px auto;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+.info-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background: #fff;
+    text-align: left;
+    flex-shrink: 0;
+}
+
+.info-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: red;
+}
+
+.info-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-card li {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    color: black;
+}
+
+.link-text {
+    color: red;
+    font-weight: 500;
+}
+
+.feature-icons {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    color: red;
+    font-weight: 500;
+}
+
+.reviews {
+    margin-top: 15px;
+    text-align: left;
+    color: black;
+}
+
+.reviews h4 {
+    color: red;
+    margin-bottom: 8px;
+}
+
+.reviews ul {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.review-form-section {
+    margin-top: 80px;
+    padding: 30px;
+    background: indianred;
+    border-radius: 12px;
+    color: white;
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+.review-form-section h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.review-form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-form-section select,
+.review-form-section input,
+.review-form-section textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+}
+
+.review-form-section button {
+    padding: 10px;
+    background: white;
+    color: red;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.review-form-section button:hover {
+    background: indianred;
+    color: white;
+}

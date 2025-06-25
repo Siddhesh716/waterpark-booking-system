@@ -1,0 +1,93 @@
+.Contact-park-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100vw;
+    text-align: center;
+    background-color: white;
+    color: red;
+    padding: 15px;
+}
+
+.contact-form {
+    background: indianred;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+.contact-form h2 {
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 2rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    border: 1px solid white;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+.contact-form button {
+    padding: 0.75rem 2rem;
+    background-color: white;
+    color: indianred;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: indianred;
+    color: white;
+}
+
+.status-text {
+    margin-top: 1rem;
+    color: green;
+    font-weight: 700;
+}
+
+.park-map-wrapper {
+    width: 100vw;
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+.contact-quote {
+    color: white;
+    background-color: indianred;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 30px auto;
+    max-width: 1200px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contact-quote h1 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contact-quote p {
+    font-size: 1.1rem;
+}

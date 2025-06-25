@@ -1,0 +1,11 @@
+.tickets-park-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    width: 100vw;
+    text-align: center;
+    background-color: white;
+    color: red;
+    padding: 20px;
+}
