@@ -14,7 +14,7 @@ function Offers() {
     const [message, setMessage] = useState('');
 
     useEffect(() => {
-        fetch('http://localhost:5000/api/offers')
+        fetch(`${process.env.REACT_APP_BASE_URL}/api/offers`)
             .then(res => res.json())
             .then(data => setOffers(data))
             .catch(err => console.error('Error fetching offers:', err));
@@ -33,7 +33,7 @@ function Offers() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('http://localhost:5000/api/bookings', {
+            const response = await fetch(`${process.env.REACT_APP_BASE_URL}/api/bookings`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({

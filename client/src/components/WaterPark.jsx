@@ -8,7 +8,7 @@ function WaterPark() {
   const [activeAddon, setActiveAddon] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/water-slides')
+    fetch(`${process.env.REACT_APP_BASE_URL}/api/water-slides`)
       .then((res) => res.json())
       .then((data) => {
         console.log("Slides fetched:", data);

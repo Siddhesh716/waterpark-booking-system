@@ -12,12 +12,12 @@ app.use(cors());
 app.use(express.json());
 
 const pool = new Pool({
-    user: 'postgres',
-    host: 'localhost',
-    database: 'Water',
-    password: 'mYseql',
-    port: 5432,
+    connectionString: 'postgresql://waterpark_db_user:RuoDkmjskmWL3kCgiqERMYhAIN3RwurS@dpg-d1dsvm15pdvs73auia00-a/waterpark_db',
+    ssl: {
+        rejectUnauthorized: false
+    }
 });
+
 
 app.get('/', (req, res) => {
     res.send('Welcome to WaterPark!!!');

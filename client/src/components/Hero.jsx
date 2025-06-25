@@ -5,7 +5,7 @@ function Hero() {
   const [backendMessage, setBackendMessage] = useState('');
 
   useEffect(() => {
-    fetch('http://localhost:5000/')
+    fetch(`${process.env.REACT_APP_BASE_URL}/`)
       .then((res) => res.text())
       .then((data) => {
         console.log('👉 From backend:', data);

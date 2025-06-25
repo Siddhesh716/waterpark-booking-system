@@ -7,7 +7,7 @@ function ThemePark() {
   const [formData, setFormData] = useState({ ride_id: '', name: '', comment: '' });
 
   useEffect(() => {
-    fetch('http://localhost:5000/api/rides')
+    fetch(`${process.env.REACT_APP_BASE_URL}/api/rides`)
       .then(res => res.json())
       .then(data => {
         setRides(data);
@@ -17,7 +17,7 @@ function ThemePark() {
   }, []);
 
   const loadReviews = (ride_id) => {
-    fetch(`http://localhost:5000/api/reviews/${ride_id}`)
+    fetch(`${process.env.REACT_APP_BASE_URL}/api/reviews/${ride_id}`)
       .then(res => res.json())
       .then(data => {
         setReviews(prev => ({ ...prev, [ride_id]: data }));
@@ -34,7 +34,7 @@ function ThemePark() {
     const { ride_id, name, comment } = formData;
     if (!ride_id || !name || !comment) return;
     try {
-      const res = await fetch('http://localhost:5000/api/reviews', {
+      const res = await fetch(`${process.env.REACT_APP_BASE_URL}/api/reviews`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
